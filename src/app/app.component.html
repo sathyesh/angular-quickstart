@@ -1,28 +1,188 @@
-<svg id="background" width='1728' height='1235' viewBox="0 0 1728 1235" fill='none' xmlns='http://www.w3.org/2000/svg'><g opacity='0.75' filter='url(#filter0_f_39_143)'><circle cy='1000' r='264' fill='url(#paint0_linear_39_143)'/></g><g opacity='0.65' filter='url(#filter1_f_39_143)'><circle cx='1720' cy='264' r='379' fill='url(#paint1_linear_39_143)'/></g><defs><filter id='filter0_f_39_143' x='-485' y='515' width='970' height='970' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><filter id='filter1_f_39_143' x='1120' y='-336' width='1200' height='1200' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><linearGradient id='paint0_linear_39_143' x1='196.5' y1='902' x2='-2.55853e-05' y2='1264' gradientUnits='userSpaceOnUse'><stop stop-color="var(--bttm-left-blur-1)"/><stop offset='1' stop-color="var(--bttm-left-blur-2)"/></linearGradient><linearGradient id='paint1_linear_39_143' x1='1720' y1='-115' x2='1720' y2='643' gradientUnits='userSpaceOnUse'><stop stop-color="var(--top-right-blur-1)"/><stop offset='1' stop-color="var(--top-right-blur-2)" /></linearGradient></defs></svg>     
-<div id="content">
-  <div class="header">
-    <h1>Quickstart Template</h1>
-    <div class="logo">
-      <img src="https://user-images.githubusercontent.com/43764894/223549637-2715c89d-a44e-42e0-8f6c-fa6246279658.png">
-    </div>
-    <h2>
-      This is a bare-bones Angular project that has everything you need to quickly deploy it to Netlify
-    </h2>
-    <div class="bttns">
-      <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/angular-quickstart" class="bttn primary">Deploy to Netlify</a>
-      <a href="https://github.com/netlify-templates/angular-quickstart" class="bttn secondary">View Repo</a>
-    </div>
+<header class="header fixed-top">	  
+  <div class="branding docs-branding">
+      <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">{{title1}}<span class="text-alt">{{title2}}</span></span></a></div>    
+          </div><!--//docs-logo-wrapper-->
+        <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
+    <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+      <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+          </ul><!--//social-list-->
+        </div><!--//docs-top-utilities-->
+      </div><!--//container-->
+  </div><!--//branding-->
+</header><!--//header-->
+<div class="page-header theme-bg-dark py-5 text-center position-relative">
+  <div class="theme-bg-shapes-right"></div>
+  <div class="theme-bg-shapes-left"></div>
+  <div class="container">
+    <h1 class="page-heading single-col-max mx-auto">Patterns</h1>
+    <div class="page-intro single-col-max mx-auto">Everything you need to get your prompt patterns online.</div>
+    <div class="main-search-box pt-3 d-block mx-auto">
+            <form class="search-form w-100">
+            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+        </form>
+        </div>
   </div>
-  <div class="resource-list">
-    <ul>
-      <li>
-        <a href="https://www.netlify.com/tags/angular/">Netlify Blog: Angular posts</a>
-      <li>
-        <a href="https://docs.netlify.com/">Netlify Docs</a>
-      </li>
-      <li>
-        <a href="https://angular.io/">Angular Docs</a>
-      </li>
-    </ul>
+</div><!--//page-header-->
+<div class="page-content">
+  <div class="container">
+    <div class="docs-overview py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-map-signs"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">Introduction</span>
+              </h5>
+              <div class="card-text">
+                {{intro_text}}
+              </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-arrow-down"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">What is a Prompt ? </span>
+              </h5>
+              <div class="card-text">
+                {{prompt}}
+              </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-box fa-fw"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">Prompt patterns</span>
+              </h5>
+              <div class="card-text">
+                {{prompt_patterns}}						    
+            </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-cogs fa-fw"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">Persona pattern</span>
+              </h5>
+              <div class="card-text">
+                {{persona_pattern}}						  
+            </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-tools"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">Question refinement pattern</span>
+              </h5>
+              <div class="card-text">
+                {{question_refinement}}
+              </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-laptop-code"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">Cognitive verifier pattern</span>
+              </h5>
+              <div class="card-text">
+                {{cognitive_verifier}}
+            </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-tablet-alt"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">Audience persona pattern</span>
+              </h5>
+              <div class="card-text">
+                {{audience_persona}}					    
+            </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-book-reader"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">Resources</span>
+              </h5>
+              <div class="card-text">
+                Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
+            </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                    <i class="fas fa-lightbulb"></i>
+                  </span><!--//card-icon-holder-->
+                  <span class="card-title-text">FAQs</span>
+              </h5>
+              <div class="card-text">
+                Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
+            </div>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+      </div><!--//row-->
+    </div><!--//container-->
+  </div><!--//container-->
+</div><!--//page-content-->
+<footer class="footer">
+  <div class="footer-bottom text-center py-5">
+    <!-- <ul class="social-list list-unstyled pb-4 mb-0">
+      <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+    </ul> -->
+    <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link">Sathyesh</a> for prompts lovers</small>
   </div>
-</div>
+</footer>
